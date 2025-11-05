@@ -42,13 +42,9 @@ export class CategorieComponent implements OnInit {
     }
   }
 
-  // selectCategory(category: any) {
-  //   this.selectedCategory = category;
-  //   this.filteredQuizzes = this.quizzes.filter(q => q.categoryId === category.id);
-  // }
-
-  // searchByCategorie(categorieName: string) {
-  //   this.quizService.searchQuizByCategorie(categorieName);
-  // }
+  resetFilter(): void {
+    this.searchText = '';
+    this.filteredCategories = this.categories;
+  }
 
 }
