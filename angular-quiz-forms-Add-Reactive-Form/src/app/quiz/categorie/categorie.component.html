@@ -1,7 +1,4 @@
 <h2>Categories</h2>
-    <ul>
-        <li *ngFor="let category of categories"> <button class="categorie_btn" (click)="">        
+<button class="categorie_btn" *ngFor="let category of categories">        
         {{ category.name }}
         </button>
-        </li>
-    </ul>
